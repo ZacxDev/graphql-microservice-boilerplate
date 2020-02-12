@@ -9,16 +9,10 @@ module.exports = {
   devtool: 'inline-source-map',
   watch: !CI && NODE_ENV !== 'production',
   entry: {
-    app: ['./src/server.ts'],
+    app: ['./src/server.js'],
   },
   module: {
-    rules: [{
-      test: /\.ts$/,
-      use: 'ts-loader',
-      include: [
-        path.resolve(__dirname, './src'),
-      ]
-    }]
+    rules: []
   },
   output: {
     path: path.resolve(__dirname, './build'),

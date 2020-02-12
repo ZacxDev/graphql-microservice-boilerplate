@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "outDir": "./build/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "CommonJS",
+    "target": "es5",
+    "esModuleInterop": true,
+    "moduleResolution": "Node",
+    "allowSyntheticDefaultImports": true,
+    "baseUrl": ".",
+    "forceConsistentCasingInFileNames": true,
+    "paths": {
+      "Clients/*": [
+        "src/clients/*"
+      ],
+      "Services/*": [
+        "src/services/*"
+      ],
+      "Mutations/*": [
+        "src/graphql/resolvers/mutations/*"
+      ],
+      "Repositories/*": [
+        "src/repositories/*"
+      ]
+    }
+  },
+  "include": [
+    "src", "__tests__"
+  ],
+  "files": [
+    "knexfile.js",
+    "webpack.config.js"
+  ]
+}
